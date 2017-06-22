@@ -10,34 +10,54 @@ namespace SolidExercices
             if (operation.Contains('+'))
             {
                 string[] splitOperation = operation.Split('+');
-                return Convert.ToDouble(splitOperation[0]) + Convert.ToDouble(splitOperation[1]);
+                double result = Convert.ToDouble(splitOperation[0]);
+                for (int i = 1; i < splitOperation.Length ; i++)
+                {
+                    result += Convert.ToDouble(splitOperation[i]);
+                }
+                return result;
             }
             else if (operation.Contains('-'))
             {
                 string[] splitOperation = operation.Split('-');
-                return Convert.ToDouble(splitOperation[0]) - Convert.ToDouble(splitOperation[1]);
+                double result = Convert.ToDouble(splitOperation[0]);
+                for (int i = 1; i < splitOperation.Length; i++)
+                {
+                    result -= Convert.ToDouble(splitOperation[i]);
+                }
+                return result;
+                
             }
             else if (operation.Contains('x'))
             {
                 string[] splitOperation = operation.Split('x');
-                return Convert.ToDouble(splitOperation[0]) * Convert.ToDouble(splitOperation[1]);
+                double result = Convert.ToDouble(splitOperation[0]);
+                for (int i = 1; i < splitOperation.Length; i++)
+                {
+                    result *= Convert.ToDouble(splitOperation[i]);
+                }
+                return result;
+                
             }
             else if (operation.Contains('/'))
             {
                 string[] splitOperation = operation.Split('/');
-                /*
+                double result = Convert.ToDouble(splitOperation[0]);
                 if (Convert.ToDouble(splitOperation[0]) == 0 || Convert.ToDouble(splitOperation[1]) == 0)
                 {
-                    throw ImpossibleOperation("Impossible to divide a number by 0");
+                    throw new Exception("Impossible to divide a number by 0");
                 }
-                */
-                return Convert.ToDouble(splitOperation[0]) / Convert.ToDouble(splitOperation[1]);
+                for (int i = 1; i < splitOperation.Length; i++)
+                {
+                    result /= Convert.ToDouble(splitOperation[i]);
+                }
+                return result;
+                
             }
             else
             {
                 return 0;
             }
-            //throw new NotImplementedException();
         }
 
     }

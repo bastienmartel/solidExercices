@@ -17,7 +17,7 @@ A LA FIN DU TP: pensez à pousser vos commits sur votre compte GitHub et envoyer 
 Réponses aux questions posées
 -----------------------------
 
-Q1)
+Q1) Pour réduire le nombre de ifs (ou éviter d'utiliser un switch), nous pouvons utiliser une interface implémentée par une classe qui possède les fonctions que doit exécuter la calculatrice.
 
 Q2)
 
