@@ -19,7 +19,7 @@ Réponses aux questions posées
 
 Q1) Pour réduire le nombre de ifs (ou éviter d'utiliser un switch), nous pouvons utiliser une interface implémentée par une classe qui possède les fonctions que doit exécuter la calculatrice.
 
-Q2)
+Q2) Il s'agit ici de séparer le domaine métier de l'application (ici, il s'agit de la réalisation des calculs), des parties accès aux données et présentation de l'application.
 
 Q3)
 
